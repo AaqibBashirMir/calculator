@@ -319,7 +319,7 @@
     </div>
 </body>
 <script>
-    const audio = new Audio("Unstoppable-Ringtone(PagalWorld).mp3");
+    // const audio = new Audio("Unstoppable-Ringtone(PagalWorld).mp3");
     let string = "";
     let buttons = document.querySelectorAll(".number");
     Array.from(buttons).forEach((buttons) => {
@@ -328,7 +328,7 @@
                 try {
                     eval(string);
                     document.getElementById("input").value = eval(string);
-                    audio.play();
+                    // audio.play();
                 } catch (err) {
                     alert(`Error: ${err}`);
                     document.getElementById("input".value) = "Error";
